@@ -478,5 +478,8 @@ body {
   position: relative;
   z-index: 1; }
 
+.home-page {
+  color: red; }
+
 
 /*# sourceMappingURL=style.min.css.map */
