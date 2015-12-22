@@ -1,10 +1,11 @@
-<html id="ng-app" data-ng-app="appName">
+<!DOCTYPE html>
+<html id="ng-app" data-ng-app="emily">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="/" />
 
-        <title data-ng-bind="$state.current.data.pageTitle">Default Title</title>
+        <title data-ng-bind="$state.current.data.pageTitle">Emily Chiang | Real Estate</title>
         <link rel="icon" type="image/png" href="./assets/img/logo/favicon.ico">
 
         <!-- CSS -->
@@ -12,16 +13,74 @@
 
         <!-- MATERIALIZE -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.4/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- LIBRARIES -->
         <script src="./libs/js/angular.min.js"></script>
         <script src="./libs/js/angular-touch.min.js"></script>
         <script src="./libs/js/angular-ui-router.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.4/js/materialize.min.js"></script>
 
         <!-- ANGULAR APP -->
         <script src="./js/app.min.js"></script>
     </head>
+
+    <!-- Navbar -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li class="item">Palo Alto</li>
+        <li class="divider"></li>
+        <li class="item">Menlo Park</li>
+        <li class="divider"></li>
+        <li class="item">Los Altos</li>
+        <li class="divider"></li>
+        <li class="item">Mountain View</li>
+        <li class="divider"></li>
+        <li class="item">Sunnyvale</li>
+        <li class="divider"></li>
+        <li class="item">Cupertino</li>
+        <li class="divider"></li>
+        <li class="item">Saratoga</li>
+    </ul>
+    <ul id="dropdown-mobile" class="dropdown-content">
+        <li class="item">Palo Alto</li>
+        <li class="divider"></li>
+        <li class="item">Menlo Park</li>
+        <li class="divider"></li>
+        <li class="item">Los Altos</li>
+        <li class="divider"></li>
+        <li class="item">Mountain View</li>
+        <li class="divider"></li>
+        <li class="item">Sunnyvale</li>
+        <li class="divider"></li>
+        <li class="item">Cupertino</li>
+        <li class="divider"></li>
+        <li class="item">Saratoga</li>
+    </ul>
+    <nav class="navbar" ng-controller="NavCtrl">
+        <div class="nav-wrapper">
+            <a href="" ui-sref="home" class="brand-logo">Emily Chiang</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="" ui-sref="home">Home</a></li>
+                <li><a href="" ui-sref="about">About</a></li>
+                <li><a href="" ui-sref="sellers">Sellers</a></li>
+                <li><a href="" ui-sref="buyers">Buyers</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Statistics<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="" ui-sref="testimonials">Testimonials</a></li>
+                <li><a href="" ui-sref="contact">Contact</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="" ui-sref="home">Home</a></li>
+                <li><a href="" ui-sref="about">About</a></li>
+                <li><a href="" ui-sref="sellers">Sellers</a></li>
+                <li><a href="" ui-sref="buyers">Buyers</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown-mobile">Statistics<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="" ui-sref="testimonials">Testimonials</a></li>
+                <li><a href="" ui-sref="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <body>
         <div data-ui-view></div>

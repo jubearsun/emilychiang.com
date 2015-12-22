@@ -1,8 +1,8 @@
-var app = angular.module('appName', [
+var app = angular.module('emily', [
         'ui.router',
         'ngTouch'
     ]);
-    
+
 app.run([
     '$rootScope',
     '$state',
@@ -25,7 +25,42 @@ app.config(['$stateProvider',
                 url: '/',
                 templateUrl: './views/home.html',
                 data: {
-                    pageTitle: 'Title'
+                    pageTitle: 'Home | Emily Chiang Real Estate'
+                }
+            })
+            .state('about', {
+                url: '/about',
+                templateUrl: './views/about.html',
+                data: {
+                    pageTitle: 'About | Emily Chiang Real Estate'
+                }
+            })
+            .state('testimonials', {
+                url: '/testimonials',
+                templateUrl: './views/testimonials.html',
+                data: {
+                    pageTitle: 'Testimonials | Emily Chiang Real Estate'
+                }
+            })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: './views/contact.html',
+                data: {
+                    pageTitle: 'Contact | Emily Chiang Real Estate'
+                }
+            })
+            .state('buyers', {
+                url: '/buyers',
+                templateUrl: './views/buyers.html',
+                data: {
+                    pageTitle: 'Buyers | Emily Chiang Real Estate'
+                }
+            })
+            .state('sellers', {
+                url: '/sellers',
+                templateUrl: './views/sellers.html',
+                data: {
+                    pageTitle: 'Sellers | Emily Chiang Real Estate'
                 }
             });
     }

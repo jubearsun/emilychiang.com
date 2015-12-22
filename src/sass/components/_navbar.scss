@@ -1,0 +1,22 @@
+.dropdown-content {
+    .item {
+        color: $black;
+        padding: 15px;
+    }
+}
+
+.navbar {
+    background-color: $blue;
+    z-index: 1000;
+    user-select: none;
+    .nav-wrapper {
+        margin: 0 10px;
+        ul {
+            li {
+                a {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

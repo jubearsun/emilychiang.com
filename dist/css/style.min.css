@@ -476,10 +476,25 @@ html {
 
 body {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  font-size: 18px; }
 
-.home-page {
-  color: red; }
+.dropdown-content .item {
+  color: #333333;
+  padding: 15px; }
+
+.navbar {
+  background-color: #0d47a1;
+  z-index: 1000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .navbar .nav-wrapper {
+    margin: 0 10px; }
+    .navbar .nav-wrapper ul li a {
+      font-size: 1.25rem; }
+
 
 
 /*# sourceMappingURL=style.min.css.map */
