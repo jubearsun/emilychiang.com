@@ -479,11 +479,23 @@ body {
   z-index: 1;
   font-size: 18px; }
 
+.content {
+  padding-top: 64px; }
+
+.page-container {
+  padding: 5%; }
+  .page-container a {
+    color: #82b1ff; }
+
 .dropdown-content .item {
   color: #333333;
-  padding: 15px; }
+  padding: 15px;
+  background: #FFFFFF;
+  opacity: 1; }
 
 .navbar {
+  position: fixed;
+  opacity: 0.97;
   background-color: #0d47a1;
   z-index: 1000;
   -webkit-user-select: none;
@@ -495,6 +507,111 @@ body {
     .navbar .nav-wrapper ul li a {
       font-size: 1.25rem; }
 
+.home-page .card-container {
+  width: 70%;
+  margin: 0 auto; }
+  .home-page .card-container .info-card {
+    *zoom: 1;
+    height: 400px;
+    background: #093272;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23); }
+    .home-page .card-container .info-card:before, .home-page .card-container .info-card:after {
+      content: '';
+      display: table; }
+    .home-page .card-container .info-card:after {
+      clear: both; }
+    .home-page .card-container .info-card .profile-img {
+      *zoom: 1;
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 31.33333%;
+      margin-left: 0%;
+      margin-right: 3%;
+      height: 100%;
+      background: url('../assets/img/home/profile.jpg') no-repeat center top;
+      background-size: cover; }
+      .home-page .card-container .info-card .profile-img:before, .home-page .card-container .info-card .profile-img:after {
+        content: '';
+        display: table; }
+      .home-page .card-container .info-card .profile-img:after {
+        clear: both; }
+      .home-page .card-container .info-card .profile-img:nth-child(2n) {
+        margin-right: 0%;
+        float: right; }
+      .home-page .card-container .info-card .profile-img:nth-child(2n+1) {
+        clear: both; }
+    .home-page .card-container .info-card .contact-info {
+      line-height: 2.5rem;
+      font-size: 1.3rem;
+      color: #FFFFFF;
+      height: 100%;
+      *zoom: 1;
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 65.66667%;
+      margin-left: 0%;
+      margin-right: 3%;
+      padding: 30px;
+      background: #093272; }
+      .home-page .card-container .info-card .contact-info:before, .home-page .card-container .info-card .contact-info:after {
+        content: '';
+        display: table; }
+      .home-page .card-container .info-card .contact-info:after {
+        clear: both; }
+      .home-page .card-container .info-card .contact-info:nth-child(2n) {
+        margin-right: 0%;
+        float: right; }
+      .home-page .card-container .info-card .contact-info:nth-child(2n+1) {
+        clear: both; }
+      .home-page .card-container .info-card .contact-info .title-name {
+        font-size: 2rem;
+        line-height: 3rem; }
+      .home-page .card-container .info-card .contact-info a:hover {
+        text-decoration: underline; }
+  .home-page .card-container .welcome {
+    margin-bottom: 5%;
+    padding: 30px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    background: #093272; }
+
+.statistics-page .instructions {
+  font-size: 1.5rem; }
+.statistics-page .cities-container {
+  text-align: center;
+  cursor: pointer; }
+  .statistics-page .cities-container .image {
+    position: relative;
+    height: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px; }
+  .statistics-page .cities-container .overlay {
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #333333;
+    opacity: 0.4;
+    -webkit-transition: opacity 300ms;
+            transition: opacity 300ms; }
+  .statistics-page .cities-container .name {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 4rem;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    left: 0;
+    width: 100%; }
+  .statistics-page .cities-container:hover .overlay {
+    opacity: 0.8; }
 
 
 /*# sourceMappingURL=style.min.css.map */

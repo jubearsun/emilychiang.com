@@ -21,3 +21,14 @@ body {
     z-index: 1;
     font-size: 18px;
 }
+
+.content {
+    padding-top: 64px;
+}
+
+.page-container {
+    padding: 5%;
+    a {
+        color: $light-blue;
+    }
+}

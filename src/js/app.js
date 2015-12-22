@@ -62,6 +62,20 @@ app.config(['$stateProvider',
                 data: {
                     pageTitle: 'Sellers | Emily Chiang Real Estate'
                 }
+            })
+            .state('listings', {
+                url: '/listings',
+                templateUrl: './views/listings.html',
+                data: {
+                    pageTitle: 'Listings | Emily Chiang Real Estate'
+                }
+            })
+            .state('statistics', {
+                url: '/statistics',
+                templateUrl: './views/statistics.html',
+                data: {
+                    pageTitle: 'Statistics | Emily Chiang Real Estate'
+                }
             });
     }
 ]);

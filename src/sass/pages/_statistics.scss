@@ -1,0 +1,41 @@
+.statistics-page {
+    .instructions {
+        font-size: 1.5rem;
+    }
+    .cities-container {
+        text-align: center;
+        cursor: pointer;
+        .image {
+            position: relative;
+            height: 350px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 30px;
+        }
+        .overlay {
+            position: absolute;
+            height: 350px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: $black;
+            opacity: 0.4;
+            transition: opacity 300ms;
+        }
+        .name {
+            position: absolute;
+            color: $white;
+            font-size: 4rem;
+            top: 50%;
+            transform: translate(0, -50%);
+            left: 0;
+            width: 100%;
+        }
+        &:hover {
+            .overlay {
+                opacity: 0.8;
+            }
+        }
+    }
+}

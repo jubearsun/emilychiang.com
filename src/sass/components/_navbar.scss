@@ -2,10 +2,14 @@
     .item {
         color: $black;
         padding: 15px;
+        background: $white;
+        opacity: 1;
     }
 }
 
 .navbar {
+    position: fixed;
+    opacity: 0.97;
     background-color: $blue;
     z-index: 1000;
     user-select: none;

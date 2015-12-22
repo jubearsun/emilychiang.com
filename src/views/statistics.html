@@ -1,0 +1,10 @@
+<div class="page-container statistics-page" ng-controller="NeighborhoodCtrl">
+    <div class="instructions">
+        Choose an area below to learn more about current open houses, market prices, and schools.
+    </div>
+    <div class="cities-container" ng-repeat="city in cities track by $index">
+        <div class="image" style="background-image:url('{{ city.image }}')"></div>
+        <div class="overlay"></div>
+        <div class="name">{{ city.name }}</div>
+    </div>
+</div>
