@@ -21,15 +21,6 @@
                 @include col(2/3, 0, 2);
                 padding: 30px;
                 background: darken($blue, 10%);
-                .title-name {
-                    font-size: 2rem;
-                    line-height: 3rem;
-                }
-                a {
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
             }
         }
         .welcome {

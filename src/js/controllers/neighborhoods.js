@@ -27,6 +27,10 @@ app.controller('NeighborhoodCtrl', ['$scope', function($scope) {
         {
             name: 'Saratoga',
             image: '../assets/img/statistics/saratoga.jpg'
+        },
+        {
+            name: 'Atherton',
+            image: '../assets/img/statistics/atherton.jpg'
         }
     ];
 }]);

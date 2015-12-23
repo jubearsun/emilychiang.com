@@ -482,10 +482,17 @@ body {
 .content {
   padding-top: 64px; }
 
+.title {
+  font-size: 2rem;
+  line-height: 3rem; }
+
 .page-container {
-  padding: 5%; }
+  padding: 5%;
+  font-size: 1.5rem; }
   .page-container a {
     color: #82b1ff; }
+    .page-container a:hover {
+      text-decoration: underline; }
 
 .dropdown-content .item {
   color: #333333;
@@ -566,11 +573,6 @@ body {
         float: right; }
       .home-page .card-container .info-card .contact-info:nth-child(2n+1) {
         clear: both; }
-      .home-page .card-container .info-card .contact-info .title-name {
-        font-size: 2rem;
-        line-height: 3rem; }
-      .home-page .card-container .info-card .contact-info a:hover {
-        text-decoration: underline; }
   .home-page .card-container .welcome {
     margin-bottom: 5%;
     padding: 30px;
@@ -578,8 +580,148 @@ body {
     font-size: 1.3rem;
     background: #093272; }
 
-.statistics-page .instructions {
-  font-size: 1.5rem; }
+.about-page .card-container {
+  width: 90%;
+  margin: 0 auto; }
+  .about-page .card-container .intro {
+    background: #093272;
+    line-height: 2.5rem;
+    height: 400px;
+    margin-bottom: 30px;
+    *zoom: 1; }
+    .about-page .card-container .intro:before, .about-page .card-container .intro:after {
+      content: '';
+      display: table; }
+    .about-page .card-container .intro:after {
+      clear: both; }
+    .about-page .card-container .intro .profile-img {
+      *zoom: 1;
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 31.33333%;
+      margin-left: 0%;
+      margin-right: 3%;
+      height: 100%;
+      background: url('../assets/img/home/profile.jpg') no-repeat center top;
+      background-size: cover; }
+      .about-page .card-container .intro .profile-img:before, .about-page .card-container .intro .profile-img:after {
+        content: '';
+        display: table; }
+      .about-page .card-container .intro .profile-img:after {
+        clear: both; }
+      .about-page .card-container .intro .profile-img:nth-child(2n) {
+        margin-right: 0%;
+        float: right; }
+      .about-page .card-container .intro .profile-img:nth-child(2n+1) {
+        clear: both; }
+    .about-page .card-container .intro .info {
+      *zoom: 1;
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 65.66667%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .about-page .card-container .intro .info:before, .about-page .card-container .intro .info:after {
+        content: '';
+        display: table; }
+      .about-page .card-container .intro .info:after {
+        clear: both; }
+      .about-page .card-container .intro .info:nth-child(2n) {
+        margin-right: 0%;
+        float: right; }
+      .about-page .card-container .intro .info:nth-child(2n+1) {
+        clear: both; }
+      .about-page .card-container .intro .info .info-text {
+        margin-top: 50px; }
+  .about-page .card-container .row {
+    *zoom: 1;
+    color: #FFFFFF;
+    margin-bottom: 30px; }
+    .about-page .card-container .row:before, .about-page .card-container .row:after {
+      content: '';
+      display: table; }
+    .about-page .card-container .row:after {
+      clear: both; }
+    .about-page .card-container .row .affiliations {
+      *zoom: 1;
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 31.33333%;
+      margin-left: 0%;
+      margin-right: 3%;
+      padding: 20px;
+      height: 357px;
+      background: #07285a; }
+      .about-page .card-container .row .affiliations:before, .about-page .card-container .row .affiliations:after {
+        content: '';
+        display: table; }
+      .about-page .card-container .row .affiliations:after {
+        clear: both; }
+      .about-page .card-container .row .affiliations:nth-child(3n) {
+        margin-right: 0%;
+        float: right; }
+      .about-page .card-container .row .affiliations:nth-child(3n+1) {
+        clear: both; }
+      .about-page .card-container .row .affiliations ul {
+        margin-left: 24px; }
+        .about-page .card-container .row .affiliations ul li {
+          list-style-type: square; }
+    .about-page .card-container .row .credentials {
+      *zoom: 1;
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 31.33333%;
+      margin-left: 0%;
+      margin-right: 3%;
+      padding: 20px;
+      height: 357px;
+      background: #07285a; }
+      .about-page .card-container .row .credentials:before, .about-page .card-container .row .credentials:after {
+        content: '';
+        display: table; }
+      .about-page .card-container .row .credentials:after {
+        clear: both; }
+      .about-page .card-container .row .credentials:nth-child(3n) {
+        margin-right: 0%;
+        float: right; }
+      .about-page .card-container .row .credentials:nth-child(3n+1) {
+        clear: both; }
+      .about-page .card-container .row .credentials ul {
+        margin-left: 24px; }
+        .about-page .card-container .row .credentials ul li {
+          list-style-type: square; }
+    .about-page .card-container .row .focus {
+      *zoom: 1;
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 31.33333%;
+      margin-left: 0%;
+      margin-right: 3%;
+      padding: 20px;
+      height: 357px;
+      background: #07285a; }
+      .about-page .card-container .row .focus:before, .about-page .card-container .row .focus:after {
+        content: '';
+        display: table; }
+      .about-page .card-container .row .focus:after {
+        clear: both; }
+      .about-page .card-container .row .focus:nth-child(3n) {
+        margin-right: 0%;
+        float: right; }
+      .about-page .card-container .row .focus:nth-child(3n+1) {
+        clear: both; }
+      .about-page .card-container .row .focus ul {
+        margin-left: 24px; }
+        .about-page .card-container .row .focus ul li {
+          list-style-type: square; }
+  .about-page .card-container .background {
+    background: #093272; }
+
 .statistics-page .cities-container {
   text-align: center;
   cursor: pointer; }

@@ -26,9 +26,18 @@ body {
     padding-top: 64px;
 }
 
+.title {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
 .page-container {
     padding: 5%;
+    font-size: 1.5rem;
     a {
         color: $light-blue;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
