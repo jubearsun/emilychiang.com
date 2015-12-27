@@ -83,6 +83,13 @@ app.config(['$stateProvider',
                 data: {
                     pageTitle: 'Checklist | Emily Chiang Real Estate'
                 }
+            })
+            .state('mortgage', {
+                url: '/mortgage',
+                templateUrl: './views/mortgage.html',
+                data: {
+                    pageTitle: 'Mortgage Calculator | Emily Chiang Real Estate'
+                }
             });
     }
 ]);

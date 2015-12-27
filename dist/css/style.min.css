@@ -745,6 +745,25 @@ body {
         .about-page .card-container .row .focus ul li {
           list-style-type: square; }
 
+.buyers-page .card-container {
+  width: 90%;
+  margin: 0 auto; }
+  .buyers-page .card-container .calculator-wrapper {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 30px; }
+  .buyers-page .card-container .help {
+    text-align: center;
+    line-height: 2.5rem; }
+    .buyers-page .card-container .help .help-text ul {
+      padding: 20px;
+      text-align: left;
+      margin-left: 24px; }
+      .buyers-page .card-container .help .help-text ul li {
+        list-style-type: square; }
+
 .checklist-page #print {
   text-align: center;
   font-weight: bold;
@@ -814,6 +833,13 @@ body {
     width: 100%; }
   .statistics-page .cities-container:hover .overlay {
     opacity: 0.8; }
+
+.testimonial-page .card .card-content {
+  padding: 40px; }
+.testimonial-page .card .card-action {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 30px; }
 
 
 /*# sourceMappingURL=style.min.css.map */

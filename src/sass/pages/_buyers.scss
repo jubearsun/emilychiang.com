@@ -1,0 +1,27 @@
+.buyers-page {
+    .card-container {
+        width: 90%;
+        margin: 0 auto;
+        .calculator-wrapper {
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+        .help {
+            text-align: center;
+            line-height: 2.5rem;
+            .help-text {
+                ul {
+                    padding: 20px;
+                    text-align: left;
+                    margin-left: 24px;
+                    li {
+                        list-style-type: square;
+                    }
+                }
+            }
+        }
+    }
+}
