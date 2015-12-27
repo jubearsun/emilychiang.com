@@ -1,0 +1,25 @@
+.checklist-page {
+    #print {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .checklist {
+        padding: 40px;
+        .title {
+            text-align: center;
+        }
+        .info {
+            margin: 30px 0;
+        }
+        ul {
+            text-align: left;
+            margin-left: 24px;
+            padding: 20px;
+            li {
+                list-style-type: circle;
+            }
+        }
+    }
+}

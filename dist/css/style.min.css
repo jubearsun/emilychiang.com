@@ -484,15 +484,43 @@ body {
 
 .title {
   font-size: 2rem;
+  font-weight: bold;
   line-height: 3rem; }
+
+.subtitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .page-container {
   padding: 5%;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  background: #EEEEEE; }
   .page-container a {
-    color: #82b1ff; }
+    color: #0d47a1; }
     .page-container a:hover {
       text-decoration: underline; }
+
+@media print {
+  .no-print {
+    display: none; }
+  .checklist {
+    font-size: 14px;
+    width: 100%;
+    padding: 0; }
+    .checklist .title {
+      font-size: 1.5rem;
+      line-height: 2rem; }
+    .checklist .subtitle {
+      font-size: 1rem;
+      line-height: 1.5rem; }
+    .checklist .info {
+      margin: 0; }
+    .checklist ul {
+      padding: 0; }
+    .checklist .print-break {
+      margin-top: 50px; } }
 
 .dropdown-content .item {
   color: #333333;
@@ -520,7 +548,7 @@ body {
   .home-page .card-container .info-card {
     *zoom: 1;
     height: 400px;
-    background: #093272;
+    background: #FFFFFF;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23); }
     .home-page .card-container .info-card:before, .home-page .card-container .info-card:after {
@@ -552,7 +580,6 @@ body {
     .home-page .card-container .info-card .contact-info {
       line-height: 2.5rem;
       font-size: 1.3rem;
-      color: #FFFFFF;
       height: 100%;
       *zoom: 1;
       float: left;
@@ -562,7 +589,7 @@ body {
       margin-left: 0%;
       margin-right: 3%;
       padding: 30px;
-      background: #093272; }
+      background: #FFFFFF; }
       .home-page .card-container .info-card .contact-info:before, .home-page .card-container .info-card .contact-info:after {
         content: '';
         display: table; }
@@ -578,13 +605,12 @@ body {
     padding: 30px;
     line-height: 2rem;
     font-size: 1.3rem;
-    background: #093272; }
+    background: #FFFFFF; }
 
 .about-page .card-container {
   width: 90%;
   margin: 0 auto; }
   .about-page .card-container .intro {
-    background: #093272;
     line-height: 2.5rem;
     height: 400px;
     margin-bottom: 30px;
@@ -637,7 +663,6 @@ body {
         margin-top: 50px; }
   .about-page .card-container .row {
     *zoom: 1;
-    color: #FFFFFF;
     margin-bottom: 30px; }
     .about-page .card-container .row:before, .about-page .card-container .row:after {
       content: '';
@@ -654,7 +679,7 @@ body {
       margin-right: 3%;
       padding: 20px;
       height: 357px;
-      background: #07285a; }
+      background: #FFFFFF; }
       .about-page .card-container .row .affiliations:before, .about-page .card-container .row .affiliations:after {
         content: '';
         display: table; }
@@ -679,7 +704,7 @@ body {
       margin-right: 3%;
       padding: 20px;
       height: 357px;
-      background: #07285a; }
+      background: #FFFFFF; }
       .about-page .card-container .row .credentials:before, .about-page .card-container .row .credentials:after {
         content: '';
         display: table; }
@@ -704,7 +729,7 @@ body {
       margin-right: 3%;
       padding: 20px;
       height: 357px;
-      background: #07285a; }
+      background: #FFFFFF; }
       .about-page .card-container .row .focus:before, .about-page .card-container .row .focus:after {
         content: '';
         display: table; }
@@ -719,8 +744,43 @@ body {
         margin-left: 24px; }
         .about-page .card-container .row .focus ul li {
           list-style-type: square; }
-  .about-page .card-container .background {
-    background: #093272; }
+
+.checklist-page #print {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer; }
+.checklist-page .checklist {
+  padding: 40px; }
+  .checklist-page .checklist .title {
+    text-align: center; }
+  .checklist-page .checklist .info {
+    margin: 30px 0; }
+  .checklist-page .checklist ul {
+    text-align: left;
+    margin-left: 24px;
+    padding: 20px; }
+    .checklist-page .checklist ul li {
+      list-style-type: circle; }
+
+.sellers-page .card-container {
+  width: 90%;
+  margin: 0 auto; }
+  .sellers-page .card-container .checklist-info {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 30px; }
+  .sellers-page .card-container .help {
+    text-align: center;
+    line-height: 2.5rem; }
+    .sellers-page .card-container .help .help-text ul {
+      padding: 20px;
+      text-align: left;
+      margin-left: 24px; }
+      .sellers-page .card-container .help .help-text ul li {
+        list-style-type: square; }
 
 .statistics-page .cities-container {
   text-align: center;

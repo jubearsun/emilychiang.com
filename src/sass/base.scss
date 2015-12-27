@@ -28,16 +28,53 @@ body {
 
 .title {
     font-size: 2rem;
+    font-weight: bold;
     line-height: 3rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .page-container {
     padding: 5%;
     font-size: 1.5rem;
+    background: $light-grey;
     a {
-        color: $light-blue;
+        color: $blue;
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+    .checklist {
+        font-size: 14px;
+        width: 100%;
+        padding: 0;
+        .title {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .subtitle {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        .info {
+            margin: 0;
+        }
+        ul {
+            padding: 0;
+        }
+        .print-break {
+            margin-top: 50px;
         }
     }
 }

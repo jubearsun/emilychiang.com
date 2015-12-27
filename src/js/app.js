@@ -76,6 +76,13 @@ app.config(['$stateProvider',
                 data: {
                     pageTitle: 'Statistics | Emily Chiang Real Estate'
                 }
+            })
+            .state('checklist', {
+                url: '/checklist',
+                templateUrl: './views/checklist.html',
+                data: {
+                    pageTitle: 'Checklist | Emily Chiang Real Estate'
+                }
             });
     }
 ]);
